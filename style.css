@@ -1,0 +1,136 @@
+/* Color palette */
+:root {
+  --blue-dark: #1d4ed8;
+  --blue-main: #3b82f6;
+  --blue-light: #93c5fd;
+  --blue-pale: #dbeafe;
+  --blue-background: #eff6ff;
+
+  --white: #ffffff;
+  --black: #1f2937;
+  --gray: #64748b;
+  --gray-light: #cbd5e1;
+}
+
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background-color: var(--blue-background);
+}
+
+/* Login card */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 36px;
+
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(30, 64, 175, 0.12);
+}
+
+h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  color: var(--blue-dark);
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0 0 28px;
+  text-align: center;
+  color: var(--gray);
+  font-size: 14px;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--black);
+  background-color: var(--white);
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: var(--gray);
+}
+
+.input-group input:focus {
+  border-color: var(--blue-main);
+  box-shadow: 0 0 0 3px var(--blue-pale);
+}
+
+/* Sign-in button */
+.login-button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px;
+
+  border: none;
+  border-radius: 6px;
+  background-color: var(--blue-main);
+  color: var(--white);
+
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.login-button:hover {
+  background-color: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+/* Sign-up link */
+.signup-text {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.signup-link {
+  color: var(--blue-dark);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.signup-link:hover {
+  color: var(--blue-main);
+  text-decoration: underline;
+}
